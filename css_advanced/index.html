@@ -162,6 +162,73 @@
     opacity: 0.8;
 }
 
+/* ------------------------- */
+/* FAQ SECTION */
+/* ------------------------- */
+
+.faq-section {
+    padding: 80px 20px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.faq-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 40px;
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-item {
+    background-color: #F5F5F5;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.faq-item:hover {
+    background-color: #E0E0E0;
+}
+
+.faq-item .question {
+    font-size: 18px;
+    font-weight: 600;
+    color: #4F46E5; /* Primary accent color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-item .answer {
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.5;
+    margin-top: 10px;
+    display: none; /* Hidden by default for collapsible FAQ */
+}
+
+/* Optional: toggle icon rotation */
+.faq-item.active .answer {
+    display: block;
+}
+
+.faq-item .icon {
+    font-size: 18px;
+    transition: transform 0.3s;
+}
+
+.faq-item.active .icon {
+    transform: rotate(45deg);
+}
+
     
 
     <!-- Testimonials -->
