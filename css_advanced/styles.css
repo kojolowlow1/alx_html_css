@@ -1,11 +1,122 @@
-/* styles.css */
-/* Starter stylesheet for CSS Advanced project */
+/* ------------------------- */
+/* GLOBAL RESETS */
+/* ------------------------- */
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #fff;
+}
+
+/* ------------------------- */
+/* HEADER SECTION */
+/* ------------------------- */
+
+header {
+    width: 100%;
+    padding: 25px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header .container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* ------------------------- */
+/* HERO / BANNER SECTION */
+/* ------------------------- */
+
+.hero {
+    height: 100vh;
+    background-image: url("images/banner.png"); /* Replace with the real Figma BG image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 150px;  /* allows space for header */
+}
+
+.hero h1 {
+    font-size: 120px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+/* CTA Button */
+.btn {
+    display: inline-block;
+    background-color: #C271FF;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #fff;
+    transition: opacity 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* ------------------------- */
+/* HERO STATS ROW */
+/* ------------------------- */
+
+.hero-stats {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.hero-stats div {
+    text-align: center;
+}
+
+.hero-stats h3 {
+    color: #C271FF;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.hero-stats p {
+    font-size: 18px;
+    margin-top: 5px;
 }
