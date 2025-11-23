@@ -1,31 +1,59 @@
-/* Make <body> a flex container arranged in a column */
+/* LAYOUT — MUST NOT BE CHANGED */
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh; /* ensures the layout fills the screen */
+    height: 100vh;
 }
 
-/* <main> is a flex container arranged in a row */
 main {
     display: flex;
     flex-direction: row;
-    flex: auto; /* allow main area to expand */
+    flex: auto;
 }
 
-/* <article> takes 2/3 of the width */
 article {
     flex: 2;
-    overflow-y: auto; /* allow scrolling */
+    overflow-y: auto;
 }
 
-/* <aside> takes 1/3 of the width */
 aside {
     flex: 1;
-    overflow-y: auto; /* allow scrolling */
+    overflow-y: auto;
 }
 
-/* Optional – just for visuals */
-header, footer, article, aside {
+/* OPTIONAL VISUAL CUSTOMIZATION BELOW */
+
+/* Header navigation */
+header ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
     padding: 10px;
+    margin: 0;
+    background: #222;
+    color: white;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    margin-right: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+article, aside {
+    padding: 20px;
     border: 1px solid #ccc;
+    background: white;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: white;
 }
